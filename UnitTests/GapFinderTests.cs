@@ -6,6 +6,8 @@ namespace UnitTests
     [TestFixture]
     public class GapFinderTests
     {
+        private GapFinder GapFinder = new GapFinder();
+
         [Test]
         public void GracefullyHandlesBadOrTrivialInput()
         {

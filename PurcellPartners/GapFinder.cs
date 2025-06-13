@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PurcellPartners.Interfaces;
 
 namespace PurcellPartners
 {
-    public class GapFinder
+    public class GapFinder : IFindGaps
     {
-        public static int Find(int[] numbers)
+        public int Find(int[] numbers)
         {
             if(numbers == null || numbers.Length < 2)
             {
